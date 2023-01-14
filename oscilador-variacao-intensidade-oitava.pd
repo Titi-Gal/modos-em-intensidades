@@ -1,0 +1,17 @@
+#N canvas 253 171 418 171 12;
+#X obj 22 22 inlet;
+#X obj 22 112 outlet~;
+#X obj 248 112 outlet~;
+#X obj 177 82 loadbang;
+#X obj 177 102 f \$1;
+#X floatatom 177 122 5 0 0 0 - - - 0;
+#X obj 22 82 variacao-intensidade;
+#X obj 248 82 variacao-intensidade;
+#X obj 22 52 clone oscilador-variacao-intensidade 410;
+#X connect 0 0 8 0;
+#X connect 3 0 4 0;
+#X connect 4 0 5 0;
+#X connect 6 0 1 0;
+#X connect 7 0 2 0;
+#X connect 8 0 6 0;
+#X connect 8 1 7 0;
